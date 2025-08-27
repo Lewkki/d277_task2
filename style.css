@@ -92,101 +92,25 @@ footer {
   color: white;
 }
 
-main {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 20px;
-  padding: 20px;
+@media (max-width: 900px) {
+  .city-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .city-img,
+  .city-intro,
+  .city-facts {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .city-tiles {
+    flex-direction: column;
+  }
+
+  .tile {
+    margin-bottom: 15px;
+  }
 }
 
-article {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
-}
-
-aside {
-  background: #caf0f8; /* light aqua */
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
-}
-
-/* List Styling */
-aside ul {
-  list-style: square inside;
-  padding-left: 10px;
-}
-
-aside li {
-  margin-bottom: 8px;
-  font-weight: 500;
-}
-
-/* Table Styling */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 15px;
-}
-
-table, th, td {
-  border: 1px solid #0077b6;
-}
-
-th {
-  background: #0077b6;
-  color: white;
-  padding: 10px;
-}
-
-td {
-  padding: 8px;
-  text-align: center;
-}
-
-tr:nth-child(even) {
-  background: #f1faff;
-}
-
-/* Tiles (bottom section on homepage) */
-.tile-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
-  margin: 20px;
-}
-
-.tile {
-  background: white;
-  padding: 15px;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
-}
-
-.tile img {
-  max-width: 100%;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-
-.tile h3 {
-  margin: 10px 0 5px;
-}
-
-.tile p {
-  font-size: 0.9rem;
-  color: #555;
-}
-
-/* Footer */
-footer {
-  background: #0077b6;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  margin-top: 20px;
-
-}
