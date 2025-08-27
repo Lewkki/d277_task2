@@ -21,50 +21,60 @@
     </header>
 
     <main>
-      <section>
-        <h2>Welcome to Paradise</h2>
-        <img src="images/hawaii_image2.png" alt="Hawaii beach" width="500" />
-        <p>
-          Hawaii is a tropical paradise known for its stunning beaches, vibrant
-          culture, and breathtaking landscapes. Whether you're looking to relax
-          on the beach, explore lush rainforests, or experience the rich history
-          of the islands, Hawaii has something for everyone.
-        </p>
+      <div class="city-top">
+        <img
+          src="images/hawaii_image1.png"
+          alt="Hawaii Landscape"
+          class="city-img"
+        />
 
-        <div class="callout-badge" id="special-note">Aloha &amp; Welcome!</div>
-      </section>
+        <section class="city-intro">
+          <h2>Welcome to Paradise</h2>
+          <p>
+            Hawaii is a tropical paradise known for its stunning beaches,
+            vibrant culture, and breathtaking landscapes. Whether you're looking
+            to relax on the beach, explore lush rainforests, or experience the
+            rich history of the islands, Hawaii has something for everyone.
+          </p>
 
-      <aside>
-        <h3>State Facts</h3>
-        <ul>
-          <li><strong>Capital:</strong> Honolulu</li>
-          <li><strong>Statehood:</strong> 1959</li>
-          <li><strong>Official Languages:</strong> Hawaiian &amp; English</li>
-        </ul>
-        <p class="small">
-          Learn more at
-          <a href="https://en.wikipedia.org/wiki/Hawaii" target="_blank"
-            >Wikipedia</a
-          >
-        </p>
-      </aside>
+          <div class="callout-badge" id="special-note">
+            Aloha &amp; Welcome!
+          </div>
 
-      <section class="lists">
-        <h2>Why People Visit</h2>
-        <ol>
-          <li>World Class Beaches</li>
-          <li>Rich Cultural Heritage</li>
-          <li>Adventure Activities</li>
-          <li>Delicious Local Cuisine</li>
-        </ol>
+          <div class="lists">
+            <h3>Why People Visit</h3>
+            <ol>
+              <li>World Class Beaches</li>
+              <li>Rich Cultural Heritage</li>
+              <li>Adventure Activities</li>
+              <li>Delicious Local Cuisine</li>
+            </ol>
 
-        <h2>Popular Local Foods</h2>
-        <ul>
-          <li>Poke</li>
-          <li>Spam Musubi</li>
-          <li>Haupia</li>
-          <li>Shave Ice</li>
-      </section>
+            <h3>Popular Local Foods</h3>
+            <ul>
+              <li>Poke</li>
+              <li>Spam Musubi</li>
+              <li>Haupia</li>
+              <li>Shave Ice</li>
+            </ul>
+          </div>
+        </section>
+
+        <aside>
+          <h3>State Facts</h3>
+          <ul>
+            <li><strong>Capital:</strong> Honolulu</li>
+            <li><strong>Statehood:</strong> 1959</li>
+            <li><strong>Official Languages:</strong> Hawaiian &amp; English</li>
+          </ul>
+          <p class="small">
+            Learn more at
+            <a href="https://en.wikipedia.org/wiki/Hawaii" target="_blank"
+              >Wikipedia</a
+            >
+          </p>
+        </aside>
+      </div>
 
       <section class="comparison">
         <h2>Quick City Comparison</h2>
@@ -96,31 +106,35 @@
         </table>
       </section>
 
-      <section class="cities">
-        <article class="card"
-          <h3><a href="pearlcity.html">Pearl City</a></h3>
+      <div class="city-tiles">
+        <div class="tile">
+          <h4><a href="pearlcity.html">Pearl City</a></h4>
           <img src="images/pearlcity.png" alt="Pearl City" />
           <p>Known for its suburban charm and proximity to Pearl Harbor.</p>
-        </article>
+          <a href="pearlcity.html" class="btn">Visit Pearl City</a>
+        </div>
 
-        <article class="card">
-          <h3><a href="honolulu.html">Honolulu</a></h3>
+        <div class="tile">
+          <h4><a href="honolulu.html">Honolulu</a></h4>
           <img src="images/honolulu.png" alt="Honolulu" />
-          <p>The vibrant capital city with stunning beaches and rich culture.</p>
-        </article>
+          <p>
+            The vibrant capital city with stunning beaches and rich culture.
+          </p>
+          <a href="honolulu.html" class="btn">Visit Honolulu</a>
+        </div>
 
-        <article class="card">
+        <div class="tile">
           <h3><a href="kailua-kona.html">Kailua-Kona</a></h3>
           <img src="images/kailua-kona.png" alt="Kailua-Kona" />
           <p>Famous for its coffee, volcanoes, and beautiful beaches.</p>
-        </article>
-      </section>
-
-      <footer>
-        <p>&copy; 2025 Hawaii Project | All rights reserved.</p>
-        <p>Contact us at <a href="contact.html">Contact Us</a></p>
-      </footer>
-
+          <a href="kailua-kona.html" class="btn">Visit Kailua-Kona</a>
+        </div>
+      </div>
     </main>
+
+    <footer>
+      <p>&copy; 2025 Hawaii Project | All rights reserved.</p>
+      <p>Contact us at <a href="contact.html">Contact Us</a></p>
+    </footer>
   </body>
 </html>
