@@ -1,10 +1,6 @@
-pages:
-  stage: deploy
-  script:
-    - mkdir .public
-    - cp -r * .public
-  artifacts:
-    paths:
-      - .public
-  only:
-    - main
+image: alpine:latest
+create-pages:
+  pages:
+    publish: public
+  rules:
+    - if: "$CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH"
