@@ -35,6 +35,28 @@ nav a:hover {
     color: #f0c040;
 }
 
+.callout-badge {
+    background-color: #f5cc5b;
+    color: #333;
+    margin: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+}
+
+.lists {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-left: 80px;
+    gap: 50px;
+    text-align: left;
+}
+
+.list {
+    flex: 1;
+}
+
 .city-top {
   display: flex;
   justify-content: space-between;
@@ -85,11 +107,62 @@ nav a:hover {
   margin-bottom: 10px;
 }
 
+aside {
+  background-color: #f0f8ff;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 30px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 30px 0;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #f5cc5b;
+  color: #333;
+}
+
+.table h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
 footer {
   text-align: center;
   padding: 15px;
   background-color: #333;
   color: white;
+}
+
+form {
+  max-width: 400px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+
+form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border-radius: 6px;
 }
 
 @media (max-width: 900px) {
