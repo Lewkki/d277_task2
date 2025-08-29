@@ -3,7 +3,7 @@ document.getElementById("newsletterForm").addEventListener("submit", function(e)
   const confirmEmail = document.getElementById("confirmEmail").value;
 
   if (email !== confirmEmail) {
-    e.preventDefault(); // stop form from submitting
+    e.preventDefault();
     alert("Email addresses do not match. Please check again.");
   }
 });
