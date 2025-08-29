@@ -1,6 +1,14 @@
 image: alpine:latest
-create-pages:
-  pages:
-    publish: public
-  rules:
-    - if: "$CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH"
+
+pages:
+  stage: deploy
+  script:
+    - mkdir .public
+    - cp index.html .public/
+    - cp style.css .public/
+    - cp -r images .public/
+  artifacts:
+    paths:
+      - .public
+  only:
+    - main
